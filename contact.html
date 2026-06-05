@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Architecture Portal | HemoLink</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="sticky top-0 z-50 bg-[#0B0F19]/80 backdrop-blur-md border-b border-white/10 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 font-bold text-2xl text-white">
+        <span class="text-[#C1121F]">🩸</span>Hemo<span class="text-[#C1121F]">Link</span>
+      </a>
+      <div id="nav-menu" class="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-300">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <a href="contact.html" class="text-white border-b-2 border-[#C1121F] pb-1">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12">
+    <div class="space-y-6">
+      <h2 class="text-4xl font-bold">Connect With Us</h2>
+      <p class="text-gray-400">Have questions about deployment parameters or partnership integration models? Get in touch with our team.</p>
+      <div class="space-y-4">
+        <div class="glass-panel p-4 flex items-center gap-4">
+          <span class="text-xl">📍</span>
+          <div><p class="text-xs text-gray-400">Location Base</p><p class="text-sm font-medium text-white">Keffi, Nasarawa State, Nigeria</p></div>
+        </div>
+        <div class="glass-panel p-4 flex items-center gap-4">
+          <span class="text-xl">✉️</span>
+          <div><p class="text-xs text-gray-400">Secure Comms Routing</p><p class="text-sm font-medium text-white">ops@hemolink.net</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="glass-panel p-8 border border-white/10">
+      <form onsubmit="handleFormSubmit(event, 'Message routed to system operations triage.')" class="space-y-4">
+        <div class="flex flex-col gap-2">
+          <label class="text-xs uppercase tracking-wider text-gray-400">Identified Sender Name</label>
+          <input type="text" required class="form-input" placeholder="Alex Carter">
+        </div>
+        <div class="flex flex-col gap-2">
+          <label class="text-xs uppercase tracking-wider text-gray-400">Return Routing Address</label>
+          <input type="email" required class="form-input" placeholder="alex@domain.com">
+        </div>
+        <div class="flex flex-col gap-2">
+          <label class="text-xs uppercase tracking-wider text-gray-400">Payload Message Core</label>
+          <textarea rows="4" required class="form-input resize-none" placeholder="Enter message text..."></textarea>
+        </div>
+        <button type="submit" class="w-full py-3 bg-[#C1121F] hover:bg-[#A00F18] text-white font-bold rounded-lg uppercase tracking-wider text-xs">Transmit Payload</button>
+      </form>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
