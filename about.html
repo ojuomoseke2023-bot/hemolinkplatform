@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Infrastructure | HemoLink</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="sticky top-0 z-50 bg-[#0B0F19]/80 backdrop-blur-md border-b border-white/10 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 font-bold text-2xl text-white">
+        <span class="text-[#C1121F]">🩸</span>Hemo<span class="text-[#C1121F]">Link</span>
+      </a>
+      <div id="nav-menu" class="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-300">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <a href="donor.html" class="hover:text-white transition-colors">Donor Registration</a>
+        <a href="request.html" class="hover:text-white transition-colors">Request Blood</a>
+        <a href="about.html" class="text-white border-b-2 border-[#C1121F] pb-1">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-4xl mx-auto px-6 py-16">
+    <section class="glass-panel p-8 md:p-12 mb-12">
+      <h2 class="text-3xl font-bold mb-4">Our Mission</h2>
+      <p class="text-gray-300 leading-relaxed mb-6">
+        HemoLink bridges the gap between critical blood shortages and life-saving donors. By leveraging automated location-based matching algorithms and precise blood compatibility models, we reduce critical delays from hours to minutes.
+      </p>
+    </section>
+
+    <section class="space-y-4">
+      <h3 class="text-2xl font-bold mb-6">Frequently Answered Queries</h3>
+      <div class="glass-panel border border-white/10 overflow-hidden">
+        <button class="w-full text-left p-6 font-semibold flex justify-between items-center accordion-trigger">
+          <span>Who can donate blood?</span>
+          <span class="accordion-icon transition-transform duration-300">&darr;</span>
+        </button>
+        <div class="hidden p-6 bg-slate-900/40 text-sm text-gray-400 border-t border-white/5">
+          Healthy individuals aged 18-65, weighing over 50kg, and meeting standard physiological medical criteria can register on the network.
+        </div>
+      </div>
+      <div class="glass-panel border border-white/10 overflow-hidden">
+        <button class="w-full text-left p-6 font-semibold flex justify-between items-center accordion-trigger">
+          <span>How often can I donate?</span>
+          <span class="accordion-icon transition-transform duration-300">&darr;</span>
+        </button>
+        <div class="hidden p-6 bg-slate-900/40 text-sm text-gray-400 border-t border-white/5">
+          Whole blood donations require a minimum 12-week rest window for males and a 16-week window for females to ensure proper red cell regeneration.
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
