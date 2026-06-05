@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donor Enrollment Protocol | HemoLink</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="sticky top-0 z-50 bg-[#0B0F19]/80 backdrop-blur-md border-b border-white/10 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 font-bold text-2xl text-white">
+        <span class="text-[#C1121F]">🩸</span>Hemo<span class="text-[#C1121F]">Link</span>
+      </a>
+      <div id="nav-menu" class="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-300">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <a href="donor.html" class="text-white border-b-2 border-[#C1121F] pb-1">Donor Registration</a>
+        <a href="request.html" class="hover:text-white transition-colors">Request Blood</a>
+        <a href="dashboard.html" class="hover:text-white transition-colors">Dashboard</a>
+        <a href="about.html" class="hover:text-white transition-colors">About</a>
+        <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+        <a href="login.html" class="px-5 py-2.5 bg-[#C1121F] hover:bg-[#A00F18] text-white rounded-lg transition-all font-semibold">Login Portal</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-3xl mx-auto px-6 py-16">
+    <div class="glass-panel p-8 md:p-12 border border-white/10 relative z-10 shadow-2xl">
+      <div class="mb-8">
+        <h2 class="text-3xl font-bold mb-2">Become a Lifesaver</h2>
+        <p class="text-gray-400 text-sm">Register your donor profile on our matching network to receive real-time local emergency alerts.</p>
+      </div>
+      <form id="donorForm" onsubmit="handleFormSubmit(event, 'Donor Profile successfully logged onto the operational network cluster.')" class="space-y-6">
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="flex flex-col gap-2">
+            <label class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Full Name</label>
+            <input type="text" required class="form-input" placeholder="John Doe">
+          </div>
+          <div class="flex flex-col gap-2">
+            <label class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Email Address</label>
+            <input type="email" required class="form-input" placeholder="john@company.com">
+          </div>
+          <div class="flex flex-col gap-2">
+            <label class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Phone Number</label>
+            <input type="tel" required class="form-input" placeholder="+234...">
+          </div>
+          <div class="flex flex-col gap-2">
+            <label class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Blood Group Grouping</label>
+            <select required class="form-input">
+              <option value="" disabled selected hidden>Select Phenotype Group</option>
+              <option value="O-">O-</option>
+              <option value="O+">O+</option>
+              <option value="A-">A-</option>
+              <option value="A+">A+</option>
+              <option value="B-">B-</option>
+              <option value="B+">B+</option>
+              <option value="AB-">AB-</option>
+              <option value="AB+">AB+</option>
+            </select>
+          </div>
+          <div class="flex flex-col gap-2">
+            <label class="text-xs text-gray-400 font-semibold uppercase tracking-wider">State Region</label>
+            <input type="text" required class="form-input" placeholder="Nasarawa">
+          </div>
+          <div class="flex flex-col gap-2">
+            <label class="text-xs text-gray-400 font-semibold uppercase tracking-wider">City Node</label>
+            <input type="text" required class="form-input" placeholder="Keffi">
+          </div>
+          <div class="flex flex-col gap-2">
+            <label class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Age Parameter</label>
+            <input type="number" min="18" max="65" required class="form-input" placeholder="25">
+          </div>
+          <div class="flex flex-col gap-2">
+            <label class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Availability Status</label>
+            <select required class="form-input">
+              <option value="active">Available (Immediate Dispatch)</option>
+              <option value="standby">Standby (Requires Contact Verification)</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="w-full mt-4 py-4 bg-[#C1121F] hover:bg-[#A00F18] text-white font-bold rounded-xl shadow-lg transition-all tracking-wider uppercase text-sm">Become a Lifesaver</button>
+      </form>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
