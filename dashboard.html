@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics Grid Command Hub | HemoLink</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="sticky top-0 z-50 bg-[#0B0F19]/80 backdrop-blur-md border-b border-white/10 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 font-bold text-2xl text-white">
+        <span class="text-[#C1121F]">🩸</span>Hemo<span class="text-[#C1121F]">Link</span>
+      </a>
+      <div id="nav-menu" class="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-300">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <a href="donor.html" class="hover:text-white transition-colors">Donor Registration</a>
+        <a href="request.html" class="hover:text-white transition-colors">Request Blood</a>
+        <a href="dashboard.html" class="text-white border-b-2 border-[#C1121F] pb-1">Dashboard</a>
+        <a href="about.html" class="hover:text-white transition-colors">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-7xl mx-auto px-6 py-12">
+    <div class="flex justify-between items-center mb-8">
+      <div>
+        <h2 class="text-3xl font-bold">Network Grid Dashboard</h2>
+        <p class="text-gray-400 text-sm">Real-time status of current regional clusters.</p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+      <div class="glass-panel p-6 border-l-4 border-l-red-600">
+        <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1">Registered Donors</p>
+        <h3 class="text-3xl font-extrabold text-white stat-counter" data-target="14820" data-plus="true">0</h3>
+      </div>
+      <div class="glass-panel p-6 border-l-4 border-l-emerald-500">
+        <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1">Requests Fulfilled</p>
+        <h3 class="text-3xl font-extrabold text-white stat-counter" data-target="3914">0</h3>
+      </div>
+      <div class="glass-panel p-6 border-l-4 border-l-blue-500">
+        <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1">Hospitals Connected</p>
+        <h3 class="text-3xl font-extrabold text-white stat-counter" data-target="142">0</h3>
+      </div>
+      <div class="glass-panel p-6 border-l-4 border-l-purple-500">
+        <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1">Lives Impacted</p>
+        <h3 class="text-3xl font-extrabold text-white stat-counter" data-target="11200" data-plus="true">0</h3>
+      </div>
+    </div>
+
+    <section class="grid lg:grid-cols-3 gap-8 mb-12">
+      <div class="lg:col-span-2 glass-panel p-8">
+        <h3 class="text-xl font-bold mb-6 flex items-center gap-2">🤖 AI-Powered Donor Matching Grid</h3>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="p-4 bg-slate-900/40 border border-white/5 rounded-xl">
+            <h4 class="font-bold text-sm text-white mb-2">📍 Location-Based Matching Vector</h4>
+            <p class="text-xs text-gray-400">Routes emergency alerts based on real-time traffic data and distances within a 15km operational radius.</p>
+          </div>
+          <div class="p-4 bg-slate-900/40 border border-white/5 rounded-xl">
+            <h4 class="font-bold text-sm text-white mb-2">⚡ Emergency Prioritization Matrix</h4>
+            <p class="text-xs text-gray-400">Automatically scales alerts based on patient vitals and surgical windows to optimize response times.</p>
+          </div>
+        </div>
+      </div>
+      <div class="glass-panel p-8">
+        <h3 class="text-xl font-bold mb-4">Active System Nodes</h3>
+        <div class="space-y-4">
+          <div class="flex items-center justify-between border-b border-white/5 pb-2">
+            <span class="text-xs font-mono text-gray-300">FMC Keffi Core Terminal</span>
+            <span class="px-2 py-0.5 bg-green-950 border border-green-500 text-green-400 text-[10px] uppercase font-bold rounded">Connected</span>
+          </div>
+          <div class="flex items-center justify-between border-b border-white/5 pb-2">
+            <span class="text-xs font-mono text-gray-300">Mararaba Node Cluster</span>
+            <span class="px-2 py-0.5 bg-green-950 border border-green-500 text-green-400 text-[10px] uppercase font-bold rounded">Connected</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
